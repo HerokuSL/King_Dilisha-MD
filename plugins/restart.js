@@ -13,7 +13,6 @@ try{
 if(!isOwner) return
 const {exec} = require("child_process")
 reply("restarting 🔄...")
-await m.react("🔁")
 await sleep(1500)
 exec("pm2 restart all")
 }catch(e){
