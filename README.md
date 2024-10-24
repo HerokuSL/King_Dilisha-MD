@@ -49,6 +49,19 @@
     <br>
 <a href='https://github.com/' target="_blank"><img alt='GitHub' src='https://img.shields.io/badge/-Create-black?style=for-the-badge&logo=github&logoColor=white'/></a>
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
+
+<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+
+<p align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=33&pause=1000&color=5513F7&width=435&lines= King_Dilisha-MD+Whatsapp+Bot" alt="Typing SVG" /></a>
+</p>
+<p align="center">
+<a href="https://github.com/dilishaTech.com">
+    <img src="https://telegra.ph/file/cad7038fe82e47f79c609.jpg"  width="700px">
+</a>
+<hr>
+
+
 # copy github workflowr
  name: Node.js CI
 
