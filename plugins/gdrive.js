@@ -33,3 +33,18 @@ const msg = `
 • *Upload Date and Time* - ${gdrive.result.date}
 
 `
+
+// SEND DETAILS
+await conn.sendMessage( from, { image: { url: 'https://telegra.ph/file/cad7038fe82e47f79c609.jpg' }, caption: msg }, { quoted: mek });
+
+// SEND FILE
+await conn.sendMessage(from, { document: { url: gdrive.result.dl_link }, mimetype: gdrive.result.fileType , fileName: gdrive.result.fileName, caption: gdrive.result.fileName }, { quoted: mek });
+
+  
+} catch (e) {
+console.log(e)
+reply('This url type is not working !!')
+}
+})
+
+// https://whatsapp.com/channel/0029VaaPfFK7Noa8nI8zGg27
