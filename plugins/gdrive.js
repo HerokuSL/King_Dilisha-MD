@@ -14,15 +14,22 @@ cmd({
     category: "download",
     filename: __filename
 },
-async(conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
-    try {
-        if (!q && !q.startsWith("https://")) return reply("give me gdrive url")
-        //fetch data from api  
-        let data = await fetchJson(`${baseUrl}/api/gdrivedl?url=${q}`)
-        reply("*📥Downloading...*")
-        await conn.sendMessage(from, { document: { url: data.data.download }, fileName: data.data.fileName, mimetype: data.data.mimeType, caption: cap }, { quoted: mek })                                                                                                                 
-    } catch (e) {
-        console.log(e)
-        reply(`${e}`)
-    }
-})
+async(conn, mek, m,{from, quoted, reply, q }) => {
+try{
+  
+if(!q) return await reply("Please give me gdrive url");
+  if(!q.includes('gdrive.com')) return await reply("This url is invalid");
+  
+const mfire = await fetchJson(`${apilink}/download/gdrive?url=${q}`);
+  
+const msg = `
+           🔥 *GOOGLE DRIVE DOWNLOADER* 🔥
+
+
+• *File Name* - ${gdrive.result.fileName}
+
+• *File Size* - ${gdrive.result.size}
+
+• *Upload Date and Time* - ${gdrive.result.date}
+
+`
