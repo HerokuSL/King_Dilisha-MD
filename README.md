@@ -10,7 +10,7 @@
 <<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 <h1 align="center">⭕King_Dilisha-MD⭕<br></h1>
 <p align="center">
-<img src="https://files.fm/u/f696rk9ctq" />
+<img src="https://telegra.ph/file/cad7038fe82e47f79c609.jpg" />
 <<a><img src='https://i.imgur.com/LyHic3i.gif'/></a>
 </p>
 
