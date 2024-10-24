@@ -1,9 +1,9 @@
 // NEW ADDED NEWS SITE [ BBC , LANKADEEPA ]
 
-const config = require('../config')
-const { cmd } = require('../command')
-const axios = require('axios')
 const { fetchJson } = require('../lib/functions')
+const config = require('../config')
+const { cmd, commands } = require('../command')
+const axios = require('axios')
 
 const apilink = 'https://dark-yasiya-news-apis.vercel.app/api' // API LINK ( DO NOT CHANGE THIS!! )
 
@@ -13,8 +13,7 @@ const apilink = 'https://dark-yasiya-news-apis.vercel.app/api' // API LINK ( DO 
 cmd({
     pattern: "lankadeepanews",
     alias: ["lankadeepa","news4"],
-    react: "🕵️‍♂️",
-    desc: "",
+    desc: "lankadeepaNews",
     category: "news",
     use: '.lankadeepanews',
     filename: __filename
@@ -49,8 +48,7 @@ reply(e)
 cmd({
     pattern: "bbcnews",
     alias: ["bbc","news5"],
-    react: "⛩",
-    desc: "",
+    desc: "bbcNews",
     category: "news",
     use: '.bbcnews',
     filename: __filename
