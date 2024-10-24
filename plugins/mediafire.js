@@ -10,8 +10,7 @@ const apilink = 'https://dark-yasiya-api-new.vercel.app' // API LINK ( DO NOT CH
 cmd({
     pattern: "mfire",
     alias: ["mf","mediafire"],
-    react: "🔥",
-    desc: "",
+    desc: "mediafire",
     category: "download",
     use: '.mfire < mediafire url >',
     filename: __filename
